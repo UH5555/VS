@@ -99,3 +99,59 @@
 //	printf("%d\n", sum);
 //	return 0;
 //}
+
+//strcpy - ×Ö·û´®¿½±´
+/////6/10·Ö
+//void my_strcpy(char* dest, char* src)
+//{
+//	while (*src != '\0')
+//	{
+//		*dest = *src;
+//		src++;
+//		dest++;
+//	}
+//	*dest = *src;
+//}
+
+////7/10·Ö
+//void my_strcpy(char* dest, char* src)
+//{
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//}
+
+////7/10·Ö
+//void my_strcpy(char* dest, char* src)
+//{
+//	if (dest != NULL && src != NULL)
+//	{
+//		while (*dest++ = *src++)
+//		{
+//			;
+//		}
+//	}
+//}
+
+
+////8/10·Ö
+//#include <assert.h>
+//void my_strcpy(char* dest, char* src)
+//{
+//	assert(dest != NULL);//¶ÏÑÔ
+//	assert(src != NULL);//¶ÏÑÔ
+//	while (*dest++ = *src++)
+//	{
+//		;
+//	}
+//}
+
+int main()
+{
+	char arr1[] = "#############";
+	char arr2[] = "bit";
+	my_strcpy(arr1, NULL);
+	printf("%s\n", arr1);
+	return 0;
+}
